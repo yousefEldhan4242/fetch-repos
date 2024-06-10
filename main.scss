@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Tahoma, Arial;
+}
+
+.repos-container{
+    width: 800px;
+    background-color: #F6F6F6;
+    margin: auto;
+    .get-repos{
+        padding: 20px;
+        display: flex;
+        background-color: #EEE;
+        .get-button{
+            width: 140px;
+            height: 54px;
+            margin-left: 10px;
+            color: #FFF;
+            background-color: #F44336;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 54px;
+        }
+        input{
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 20px;
+            border: none;
+            height: 54px;
+            &:focus{
+                outline: 2px solid #F44336;
+            }
+        }
+    }
+    .show-data{
+        padding: 20px;
+        background-color: #E0E0E0;
+        .repo-box{
+            background-color: #FFF;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
+            .items-container{
+
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: row-reverse;
+                a,
+                span{
+                    float: right;
+                    // justify-items: flex-end;
+                    // margin-left: auto;
+                    width: 90px;
+                    margin-left: 4px;
+                    font-size: 12px;
+                    color: #FFF;
+                    text-align: center;
+                    padding: 4px;
+                    border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    -ms-border-radius: 4px;
+                    -o-border-radius: 4px;
+                }
+                a{
+                    text-decoration: none;
+                    background-color: #E91E63;
+                }
+                span{
+                    background-color: #009688;
+                }
+            }
+        }
+    }
+}
